@@ -42,7 +42,16 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    # Write here your code
+    suma = 0
+   
+    for numero in list_numbers:
+        if numero < 0:
+            raise ValueError("Debes incluir números iguales o mayores a 0")
+        
+        
+        if numero % 2 != 0:
+            suma = suma + numero
+    return suma
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
