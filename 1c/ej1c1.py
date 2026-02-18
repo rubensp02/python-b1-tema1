@@ -45,8 +45,20 @@ Exemple:
 """
 
 
+#Bucle for
+
+def mult_for(value, times):
+    newvalue=0
+    for i in range(times):
+     newvalue = newvalue + value
+    return newvalue
+print (mult_for(2, 3))
+
+# Modo recursivo
+
 def mult_recursive(value, times):
-    # Write here your code
+
+
     pass
 
 
