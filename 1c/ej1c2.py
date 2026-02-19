@@ -33,10 +33,19 @@ Exemple
      [5, 4, 3, 2, 1]
 
 """
-
-
+# HECHO MUY FÁCIL SIN RECURSIÓN:
 def invert_list(lst):
-    # Write here your code
+    i = lst[::-1]
+    return i
+
+# MODO RECURSIVO
+def invert_list(lst):
+    # Caso base
+    if len(lst) == 0:
+        return []
+    
+    # Caso recursivo
+    return [lst[-1]] + invert_list(lst[:-1])
     pass
 
 
