@@ -57,8 +57,13 @@ print (mult_for(2, 3))
 # Modo recursivo
 
 def mult_recursive(value, times):
-
-
+    # Caso base
+    if times == 0:
+        return 0
+    
+    # Caso recursivo
+    return value + mult_recursive(value, times - 1)
+ 
     pass
 
 
