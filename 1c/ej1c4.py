@@ -41,7 +41,10 @@ Exemple:
 
 
 def is_palindrome(word):
-    # Write here your code
+   def is_palindrome(word):
+    if word[0] != word[-1]:
+        return False
+    return word[0] != is_palindrome(word[1::])
     pass
 
 
